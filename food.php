@@ -128,7 +128,7 @@ session_start();
 
         <div class="row">
           <?php
-          include('../db/db.php');
+          include('db/db.php');
 
           // Retrieve rooms data from the database
           $recordsPerPage = isset($_GET['per_page']) ? $_GET['per_page'] : 6;
@@ -173,7 +173,7 @@ session_start();
               <div class="modal fade" id="bookingModal_<?php echo $row['room_id']; ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
-                    <form id="bookingForm_<?php echo $row['room_id']; ?>" action="../php/booking-process.php">
+                    <form id="bookingForm_<?php echo $row['room_id']; ?>" action="php/booking-process.php">
                       <div class="modal-header">
                         <h5 class="modal-title d-flex align-items-center">
                           <i class="bi bi-calendar3-fill fs-3 me-2"></i> Booking Form for <?php echo $row['room_name']; ?> - ₱<?php echo $row['price']; ?>/8 Hours
@@ -270,7 +270,7 @@ session_start();
         <div class="col-lg-8 text-end">
   <div class="btn-group" role="group" aria-label="Pagination">
     <?php
-    include('../db/db.php');
+    include('db/db.php');
 
     // Get current page from URL parameter
     $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;

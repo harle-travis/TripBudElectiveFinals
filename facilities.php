@@ -248,7 +248,7 @@ img {
     <div class="facilities">
     <div class="about">
       <div class="aboutimg">
-        <img src="../img/beach_bg_1.jpeg"  alt="">
+        <img src="img/beach_bg_1.jpeg"  alt="">
       </div>
         
       
@@ -268,22 +268,22 @@ img {
 
       <div class="gallery">
         <div class="gallery-item">
-            <img src="../img/0.jpg" alt="Image 1">
+            <img src="img/0.jpg" alt="Image 1">
         </div>
         <div class="gallery-item">
-            <img src="../img/6.png" alt="Image 2">
+            <img src="img/6.png" alt="Image 2">
         </div>
         <div class="gallery-item">
-            <img src="../img/2.jpg" alt="Image 3">
+            <img src="img/2.jpg" alt="Image 3">
         </div>
         <div class="gallery-item">
-            <img src="../img/3.jpg" alt="Image 4">
+            <img src="img/3.jpg" alt="Image 4">
         </div>
         <div class="gallery-item">
-            <img src="../img/4.jpg" alt="Image 5">
+            <img src="img/4.jpg" alt="Image 5">
         </div>
         <div class="gallery-item">
-            <img src="../img/5.jpg" alt="Image 6">
+            <img src="img/5.jpg" alt="Image 6">
         </div>
     </div>
 
@@ -304,7 +304,7 @@ img {
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="../JS/index.js"></script>
+  <script src="JS/index.js"></script>
 
 </body>
 </html>

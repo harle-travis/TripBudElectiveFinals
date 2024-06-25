@@ -128,7 +128,7 @@ session_start();
 
         <div class="row">
           <?php
-          include('../db/db.php');
+          include('db/db.php');
 
           // Retrieve rooms data from the database
           $recordsPerPage = isset($_GET['per_page']) ? $_GET['per_page'] : 6;
@@ -189,7 +189,7 @@ session_start();
         <div class="col-lg-8 text-end">
   <div class="btn-group" role="group" aria-label="Pagination">
     <?php
-    include('../db/db.php');
+    include('db/db.php');
 
     // Get current page from URL parameter
     $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;

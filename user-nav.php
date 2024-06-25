@@ -37,7 +37,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 shadow-sm sticky-top">
     <div class="container-fluid">
-    <img src="../img/1.png" alt="logo"/>
+    <img src="img/1.png" alt="logo"/>
         <a class="left navbar-brand me-5 fw-bold fs-3 h-font" href="index.php">TravelBuddy</a>
         <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -186,7 +186,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="../JS/index.js"></script>
+  <script src="JS/index.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
@@ -219,13 +219,13 @@
                     }
                 }
             };
-            xhr.open('GET', '../php/fetch-notification.php', true);
+            xhr.open('GET', 'php/fetch-notification.php', true);
             xhr.send();
         }
         $('#notificationButton').click(function() {
         // Send AJAX request to mark notifications as read
         $.ajax({
-            url: '../php/mark-as-read.php',
+            url: 'php/mark-as-read.php',
             method: 'POST',
             success: function(response) {
                 // Update the badge count on the bell icon
@@ -244,7 +244,7 @@
     // Function to update the notification badge count
     function updateNotificationBadge() {
         $.ajax({
-            url: '../php/unread-notif.php', // Path to your PHP script that fetches the count of unread notifications
+            url: 'php/unread-notif.php', // Path to your PHP script that fetches the count of unread notifications
             method: 'GET',
             dataType: 'html',
             success: function(response) {
